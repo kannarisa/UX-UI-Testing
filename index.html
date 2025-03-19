@@ -1,38 +1,81 @@
 <!DOCTYPE html>
 <html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Temple by Region</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div id="temple" class="templeall">
-        <h1>TEMPLE BY REGION</h1>
-        <h2>ค้นหาข้อมูลวัดตามภูมิภาค</h2>
-        <div id="watthai" class="wat">
-            <div class="item">
-                <img id="imagewatthai" class="imagewatthai2" src="north-temple.jpg" alt="north">
-                <p>ภาคเหนือ</p>
-            </div>
-            <div class="item">
-                <img id="imagewatthai" class="imagewatthai2" src="temple.jpg" alt="temple">
-                <p>ภาคกลาง</p>
-            </div>
-            <div class="item">
-                <img id="imagewatthai" class="imagewatthai2" src="east-temple.jpg" alt="east">
-                <p>ภาคตะวันออกเฉียงเหนือ</p>
-            </div>
-            <div class="item">
-                <img id="imagewatthai" class="imagewatthai2" src="west-temple.jpg" alt="west">
-                <p>ภาคตะวันตก</p>
-            </div>
+      <h1>TEMPLE BY REGION</h1>
+      <h2>ค้นหาข้อมูลวัดตามภูมิภาค</h2>
+      <div class="controls">
+        <label for="autoplay">Auto Play: </label>
+        <input
+          type="checkbox"
+          id="autoplay"
+          checked
+          onchange="toggleAutoPlay()"
+        />
+      </div>
+      <div id="watthai" class="wat">
+        <div class="item">
+          <a href="https://travel.kapook.com/view254413.html" target="_blank">
+            <img
+              src="north-temple.jpg"
+              alt="north"
+              id="imagewatthai"
+              class="imagewatthai2"
+            />
+            <p>ภาคเหนือ</p>
+          </a>
         </div>
-        <div class="dots">
-            <span class="dot active"></span>
-            <span class="dot"></span>
+        <div class="item">
+          <a
+            href="https://travel.trueid.net/detail/vMz7nqrEXWZj"
+            target="_blank"
+          >
+            <img
+              src="temple.jpg"
+              alt="temple"
+              id="imagewatthai"
+              class="imagewatthai2"
+            />
+            <p>ภาคกลาง</p>
+          </a>
         </div>
+        <div class="item">
+          <a href="https://travel.kapook.com/view253034.html" target="_blank">
+            <img
+              src="east-temple.jpg"
+              alt="east"
+              id="imagewatthai"
+              class="imagewatthai2"
+            />
+            <p>ภาคตะวันออกเฉียงเหนือ</p>
+          </a>
+        </div>
+        <div class="item">
+          <a
+            href="https://travel.trueid.net/detail/Y84AGj7EolX0"
+            target="_blank"
+          >
+            <img
+              src="west-temple.jpg"
+              alt="west"
+              id="imagewatthai"
+              class="imagewatthai2"
+            />
+            <p>ภาคตะวันตก</p>
+          </a>
+        </div>
+      </div>
+      <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+      </div>
     </div>
     <script src="javascript.js"></script>
-</body>
+  </body>
 </html>
